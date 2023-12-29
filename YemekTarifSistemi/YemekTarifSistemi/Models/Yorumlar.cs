@@ -9,8 +9,6 @@ public partial class Yorumlar
 
     public string? Yorum { get; set; }
 
-    public string? Tarif { get; set; }
-
     public DateTime? Eklemetarihi { get; set; }
 
     public int? TarifId { get; set; }

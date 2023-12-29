@@ -1,0 +1,52 @@
+﻿@model IEnumerable<YemekTarifSistemi.Models.YemekTarifleri>
+
+@{
+    ViewData["Title"] = "KategoriYemekler";
+    Layout = "~/Views/Shared/_yönetimTema.cshtml";
+}
+
+<h1>Seçtiğiniz Kategorideki Tüm Yemek Tarifleri</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Yemek Adı
+            </th>
+            <th>
+                Yemek Tarifi
+            </th>
+            <th>
+                Aktif
+            </th>
+            <th>
+                Kategori Adı
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TarifId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Yemekadi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tarif)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Aktif)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Kategori.KategoriId)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

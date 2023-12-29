@@ -1,0 +1,49 @@
+﻿@model IEnumerable<YemekTarifSistemi.Models.Sayfalar>
+
+@{
+    ViewData["Title"] = "Sayfalar";
+    Layout = "~/Views/Shared/_yönetimTema.cshtml";
+}
+
+<h1>Sayfalar</h1>
+
+<p>
+    <a asp-action="SayfaEkle">Yeni Sayfa Ekle</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+               Başlık
+            </th>
+            <th>
+                Aktif
+            </th>
+            <th>
+                İşlemler
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SayfaId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Baslik)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Aktif)
+            </td>
+            <td>
+                <a asp-action="SayfaGetir" asp-route-id="@item.SayfaId">Güncelle</a> |
+                    <a asp-action="SayfaSil" asp-route-id="@item.SayfaId" onclick="return confirm('Sayfa Silinsin mi?')">Sayfa Sil</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

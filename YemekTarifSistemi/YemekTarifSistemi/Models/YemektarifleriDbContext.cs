@@ -147,9 +147,6 @@ public partial class YemektarifleriDbContext : DbContext
                 .HasColumnType("datetime")
                 .HasColumnName("eklemetarihi");
             entity.Property(e => e.Silindi).HasColumnName("silindi");
-            entity.Property(e => e.Tarif)
-                .HasColumnType("ntext")
-                .HasColumnName("tarif");
             entity.Property(e => e.TarifId).HasColumnName("tarifID");
             entity.Property(e => e.UyeId).HasColumnName("uyeID");
             entity.Property(e => e.Yorum)

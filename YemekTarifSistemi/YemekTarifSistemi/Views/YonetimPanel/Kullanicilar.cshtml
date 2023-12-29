@@ -1,0 +1,69 @@
+﻿@model IEnumerable<YemekTarifSistemi.Models.Kullanicilar>
+
+@{
+    ViewData["Title"] = "Kullanicilar";
+    Layout = "~/Views/Shared/_yönetimTema.cshtml";
+}
+
+<h1>Kullanıcılar</h1>
+
+<p>
+    <a asp-action="KullaniciEkle">Kullanıcı Ekle</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Adı
+            </th>
+            <th>
+                Soyadı
+            </th>
+            <th>
+                E-posta
+            </th>
+            <th>
+                Telefon
+            </th>
+            <th>
+                Yetki
+            </th>
+            <th>
+                Aktif
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Adi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Soyadi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Eposta)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Telefon)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Yetki)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Aktif)
+                </td>
+                <td>
+                    <a asp-action="KullaniciGetir" asp-route-id="@item.KullaniciId">Güncelle</a> |
+                    <a asp-action="KullaniciSil" asp-route-id="@item.KullaniciId" onclick="return confirm ('Kullanıcıyı silmek istiyor musun?')">Sil</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

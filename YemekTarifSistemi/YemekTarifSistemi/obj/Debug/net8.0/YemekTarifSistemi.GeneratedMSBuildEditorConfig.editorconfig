@@ -1,11 +1,19 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = YemekTarifSistemi
 build_property.RootNamespace = YemekTarifSistemi
@@ -32,6 +40,78 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/emre_/OneDrive/Masaüstü/YemekTarifSistemi/YemekTarifSistemi/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emre_/OneDrive/Masaüstü/YemekTarifSistemi/YemekTarifSistemi/Views/Shared/_yönetimTema.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF95w7ZuZXRpbVRlbWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emre_/OneDrive/Masaüstü/YemekTarifSistemi/YemekTarifSistemi/Views/YonetimPanel/Bilgilerim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWW9uZXRpbVBhbmVsXEJpbGdpbGVyaW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emre_/OneDrive/Masaüstü/YemekTarifSistemi/YemekTarifSistemi/Views/YonetimPanel/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWW9uZXRpbVBhbmVsXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emre_/OneDrive/Masaüstü/YemekTarifSistemi/YemekTarifSistemi/Views/YonetimPanel/KategoriEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWW9uZXRpbVBhbmVsXEthdGVnb3JpRWtsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emre_/OneDrive/Masaüstü/YemekTarifSistemi/YemekTarifSistemi/Views/YonetimPanel/KategoriGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWW9uZXRpbVBhbmVsXEthdGVnb3JpR3VuY2VsbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emre_/OneDrive/Masaüstü/YemekTarifSistemi/YemekTarifSistemi/Views/YonetimPanel/Kategoriler.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWW9uZXRpbVBhbmVsXEthdGVnb3JpbGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emre_/OneDrive/Masaüstü/YemekTarifSistemi/YemekTarifSistemi/Views/YonetimPanel/KategoriYemekler.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWW9uZXRpbVBhbmVsXEthdGVnb3JpWWVtZWtsZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emre_/OneDrive/Masaüstü/YemekTarifSistemi/YemekTarifSistemi/Views/YonetimPanel/KullaniciEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWW9uZXRpbVBhbmVsXEt1bGxhbmljaUVrbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emre_/OneDrive/Masaüstü/YemekTarifSistemi/YemekTarifSistemi/Views/YonetimPanel/KullaniciGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWW9uZXRpbVBhbmVsXEt1bGxhbmljaUd1bmNlbGxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emre_/OneDrive/Masaüstü/YemekTarifSistemi/YemekTarifSistemi/Views/YonetimPanel/Kullanicilar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWW9uZXRpbVBhbmVsXEt1bGxhbmljaWxhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emre_/OneDrive/Masaüstü/YemekTarifSistemi/YemekTarifSistemi/Views/YonetimPanel/SayfaEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWW9uZXRpbVBhbmVsXFNheWZhRWtsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emre_/OneDrive/Masaüstü/YemekTarifSistemi/YemekTarifSistemi/Views/YonetimPanel/SayfaGetir.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWW9uZXRpbVBhbmVsXFNheWZhR2V0aXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emre_/OneDrive/Masaüstü/YemekTarifSistemi/YemekTarifSistemi/Views/YonetimPanel/SayfaGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWW9uZXRpbVBhbmVsXFNheWZhR3VuY2VsbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emre_/OneDrive/Masaüstü/YemekTarifSistemi/YemekTarifSistemi/Views/YonetimPanel/Sayfalar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWW9uZXRpbVBhbmVsXFNheWZhbGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emre_/OneDrive/Masaüstü/YemekTarifSistemi/YemekTarifSistemi/Views/YonetimPanel/TarifEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWW9uZXRpbVBhbmVsXFRhcmlmRWtsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emre_/OneDrive/Masaüstü/YemekTarifSistemi/YemekTarifSistemi/Views/YonetimPanel/TarifGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWW9uZXRpbVBhbmVsXFRhcmlmR3VuY2VsbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emre_/OneDrive/Masaüstü/YemekTarifSistemi/YemekTarifSistemi/Views/YonetimPanel/Tarifler.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWW9uZXRpbVBhbmVsXFRhcmlmbGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emre_/OneDrive/Masaüstü/YemekTarifSistemi/YemekTarifSistemi/Views/YonetimPanel/Yorumlar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWW9uZXRpbVBhbmVsXFlvcnVtbGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/emre_/OneDrive/Masaüstü/YemekTarifSistemi/YemekTarifSistemi/Views/_ViewImports.cshtml]

@@ -1,0 +1,49 @@
+﻿@model IEnumerable<YemekTarifSistemi.Models.Kategoriler>
+
+@{
+    ViewData["Title"] = "Kategoriler";
+    Layout = "~/Views/Shared/_yönetimTema.cshtml";
+}
+
+<h1>Kategori Ekle</h1>
+
+<p>
+    <a asp-action="KategoriEkle">Yeni Kategori Ekle</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Kategori Adı
+            </th>
+            <th>
+                Aktif
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.KategoriId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Kategoriadi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Aktif)
+                </td>
+                <td>
+                    <a asp-action="KategoriGetir" asp-route-id="@item.KategoriId">Düzenle</a> |
+                    <a asp-action="KategoriSil" asp-route-id="@item.KategoriId" onclick="return confirm ('Kategoriyi silmek istiyor musun?')">Sil</a> |
+                    <a asp-action="KategoriYemekler" asp-route-id="@item.KategoriId">Yemekler</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
