@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/YemekTarifSistemi.styles.css" asp-append-version="true" />
+    <style>
+        button:focus {
+            outline: 0;
+        }
+
+        .navbar .dropdown-menu .form-control {
+            width: 200px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -48,6 +57,52 @@
                             }
                         }
                     </ul>
+                    <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
+                        <li class="nav-item order-2 order-md-1"><a href="#" class="nav-link" title="settings"><i class="fa fa-cog fa-fw fa-lg"></i></a></li>
+                        <li class="dropdown order-1">
+
+                            @using System.Security.Claims;
+                            @{
+                                try
+                                {
+                                    string kuladi = User.FindFirstValue(ClaimTypes.Email).ToString();
+
+                                <li>
+                                    <div class="form-group">
+                                        <small>
+                                            Hoşgeldiniz @kuladi
+                                            <a href="/Giris/CikisYap" onclick="return confirm('Çıkış yapmak istiyor musun?')'">Çıkış</a>
+                                        </small>
+                                    </div>
+                                </li>
+                                }
+                                catch
+                                {
+                                <button type="button" id="dropdownMenu1" data-bs-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle">Login <span class="caret"></span></button>
+                                <ul class="dropdown-menu dropdown-menu-end mt-1">
+                                    <li class="p-3">
+                                        <form class="form" role="form" method="post" action="/Giris/GirisYap">
+                                            <div class="form-group">
+                                                <input id="Eposta" name="Eposta" placeholder="Email" class="form-control form-control-sm" type="text">
+                                            </div>
+                                            <div class="form-group">
+                                                <input id="Parola" name="Parola" placeholder="Şifre" class="form-control form-control-sm" type="text">
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-primary btn-block">Giriş</button>
+                                            </div>
+                                            <div class="form-group text-xs-center">
+                                                <small><a href="#">Şifremi Unuttum</a></small>
+                                                <small><a href="#">Kayıt Ol</a></small>
+                                            </div>
+                                        </form>
+                                    </li>
+                                </ul>
+                                }
+                            }
+
+                    </ul>
+                    </li>
                 </div>
             </div>
         </nav>
@@ -60,7 +115,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - YemekTarifleri_UI - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2023 - YemekTarifleri - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

@@ -15,8 +15,8 @@ namespace YemekTarifSistemi.Controllers
 
         public IActionResult Index(int id)
         {
-            YemektarifleriDbContext db = new YemektarifleriDbContext(); 
-            var sayfa = db.Sayfalars.Where(a=>a.Aktif==true && a.Silindi == false && a.SayfaId==id).FirstOrDefault();
+            YemektarifleriDbContext db = new YemektarifleriDbContext();
+            var sayfa = db.Sayfalars.Where(a => a.Aktif == true && a.Silindi == false && a.SayfaId == id).FirstOrDefault();
             return View(sayfa);
         }
 

@@ -5,13 +5,12 @@
     Layout = "~/Views/Shared/_yönetimTema.cshtml";
 }
 
-<h1>Bilgilerim</h1>
+<h4>Bilgilerim</h4>
 
-<h4>Kullanicilar</h4>
 <hr />
 <div class="row">
-    <div class="col-md-4">
-        <form asp-action="Bilgilerim">
+    <div class="col-md-12">
+        <form asp-action="BilgilerimGuncelle">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="KullaniciId" />
             <div class="form-group">
@@ -35,33 +34,24 @@
                 <span asp-validation-for="Telefon" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Parola" class="control-label"></label>
+                <label asp-for="Parola" class="control-label text-danger"> Parola (Değiştirilmeyecekse boş bırakın) *</label>
+                <input asp-for="Parola" class="form-control" />
+                <span asp-validation-for="Parola" class="text-danger"></span>
+            </div
+            <div class="form-group">
+                <label asp-for="Parola" class="control-label"> Parola (Tekrar) </label>
                 <input asp-for="Parola" class="form-control" />
                 <span asp-validation-for="Parola" class="text-danger"></span>
             </div>
+            <br/>
             <div class="form-group">
-                <label asp-for="Yetki" class="control-label"></label>
-                <input asp-for="Yetki" class="form-control" />
-                <span asp-validation-for="Yetki" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Aktif" class="control-label"></label>
-                <input asp-for="Aktif" class="form-control" />
-                <span asp-validation-for="Aktif" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Silindi" class="control-label"></label>
-                <input asp-for="Silindi" class="form-control" />
-                <span asp-validation-for="Silindi" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Güncelle" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Geri</a>
 </div>
 

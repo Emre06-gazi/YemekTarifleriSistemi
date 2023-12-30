@@ -2117,6 +2117,30 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\emre_\\OneDrive\\Masaüstü\\YemekTarifSistemi\\YemekTarifSistemi\\wwwroot\\loginPage\\README.markdown",
+      "PackagePath": "staticwebassets\\loginPage\\README.markdown"
+    },
+    {
+      "Id": "C:\\Users\\emre_\\OneDrive\\Masaüstü\\YemekTarifSistemi\\YemekTarifSistemi\\wwwroot\\loginPage\\dist\\index.html",
+      "PackagePath": "staticwebassets\\loginPage\\dist\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\emre_\\OneDrive\\Masaüstü\\YemekTarifSistemi\\YemekTarifSistemi\\wwwroot\\loginPage\\dist\\style.css",
+      "PackagePath": "staticwebassets\\loginPage\\dist\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\emre_\\OneDrive\\Masaüstü\\YemekTarifSistemi\\YemekTarifSistemi\\wwwroot\\loginPage\\license.txt",
+      "PackagePath": "staticwebassets\\loginPage\\license.txt"
+    },
+    {
+      "Id": "C:\\Users\\emre_\\OneDrive\\Masaüstü\\YemekTarifSistemi\\YemekTarifSistemi\\wwwroot\\loginPage\\src\\index.pug",
+      "PackagePath": "staticwebassets\\loginPage\\src\\index.pug"
+    },
+    {
+      "Id": "C:\\Users\\emre_\\OneDrive\\Masaüstü\\YemekTarifSistemi\\YemekTarifSistemi\\wwwroot\\loginPage\\src\\style.scss",
+      "PackagePath": "staticwebassets\\loginPage\\src\\style.scss"
+    },
+    {
       "Id": "C:\\Users\\emre_\\OneDrive\\Masaüstü\\YemekTarifSistemi\\YemekTarifSistemi\\wwwroot\\yonetimPanel\\.gitignore",
       "PackagePath": "staticwebassets\\yonetimPanel\\.gitignore"
     },
